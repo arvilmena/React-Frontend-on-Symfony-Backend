@@ -12,9 +12,8 @@ class HomeController extends AbstractController
      */
     public function index()
     {
-        return $this->json([
-            'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/HomeController.php',
+        return $this->render('base.html.php', [
+            'name' => 'test'
         ]);
     }
 }
